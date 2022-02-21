@@ -1,0 +1,981 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- logo start  -->
+    <link rel="icon" href="assets/icons/logo.png" type="image/png" sizes="16x16">
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="assets/css/fontawesome.all.min.css" />
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="assets/plugins/owl/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/plugins/owl/css/owl.theme.default.min.css" />
+    <!-- magnific-popup css  -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Custom css  -->
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <title>single-Blog</title>
+</head>
+
+<body>
+
+    <!-- ==========================================================
+    						Homepage-blog start 
+    	========================================================= -->
+
+    <header>
+        <div class="container mt-20 mb-20 white-bg">
+            <a href="index.html"><img src="assets/images/logo/Logo.png" alt="logo"></a>
+            <!-- navbar start -->
+            <div id="menu-bars" class="fas fa-bars"></div>
+            <nav class="hero-nav">
+                <ul>
+                    <li>
+                        <div class="dropdown">
+                            <a href="index.html" class="dropbtn">Home <i class="fa fa-caret-down"></i>
+
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="index.html">Homepage-1</a>
+                                <a href="index-2.html">Homepage-2</a>
+                                <a href="index-3.html">Homepage-3</a>
+                                <a href="index-4.html">Homepage-4</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="blog-single.html">Layout</a></li>
+
+                    <li><a href="widget.html">Widget</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <div id="myOverlay" class="search-overlay">
+                        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                        <div class="search-overlay-content">
+                            <form action="/action_page.php">
+                                <input type="text" placeholder="Search Post..." name="search">
+                                <button type="submit"> <i class="fas fa-search "> </i>Search</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <button class="white-btn search-btn openBtn " onclick="openSearch()" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                    <div id="subscribeOverlay" class="subscribe-overlay">
+                        <span class="closebtn" onclick="closeSubs()" title="Close Overlay">×</span>
+                        <div class="subscribe-overlay-content">
+                            <!-- subscribe now start  -->
+                            <div class="subscribe-now card ">
+                                <div class="card-inner">
+                                    <div class="post-heading">
+                                        <h3> <span>Subscribe Now</span> </h3>
+                                    </div>
+                                    <div class="subscribe-container ">
+                                        <div class="subscribe-now-img">
+                                            <img src="assets/images/others/subscribe-now.png" alt="subscribe now img">
+                                        </div>
+                                        <div class="subscribe-now-bottom pt-25 pb-25 pl-25 pr-25 warning-bg">
+                                            <p> Subscribe to get update</p>
+                                            <div class="email-field">
+                                                <i class="far fa-envelope"></i>
+                                                <input type="email" placeholder="Enter email address">
+                                                <p class="pl-10"> </p>
+                                            </div>
+                                            <div>
+                                                <a class="primary-btn" href="#"><i class="far fa-paper-plane pr-5"></i>
+                                                    Subscribe</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- subscribe now end  -->
+                        </div>
+                    </div>
+
+                    <button class="primary-btn subscribe-btn " type="button" onclick="openSubs()">
+                        Subscribe
+                    </button>
+                </div>
+            </nav>
+
+            <!-- navbar end -->
+        </div>
+    </header>
+    <div class="home-demo warning-bg">
+        <!-- large-card post start  -->
+        <div class="container home-blog  pt-80 pb-80">
+            <div class="grid-cards">
+                <div class=" post-cards lg-cards">
+                    <div class="large-card wide-img-post white-bg ">
+                        <div class="post-img">
+                            <img src="assets/images/blog/blog-banner.png" class="card-img-top" alt="Post Title" />
+                            <button class="primary-btn post-category ">Social</button>
+
+                        </div>
+                        <div class=" card-inner">
+                            <h4 class="post-title">
+                                What kind of impact has social media had on our daily lives?
+                            </h4>
+                            <div class="post-author mt-25">
+                                <div class="author ">
+                                    <span class="icon-bg">
+                                        <i class="far fa-user"></i>
+                                    </span>
+                                    <span>Author: Ethan Brave</span>
+                                </div>
+                                <div class="date">
+                                    <span class="icon-bg">
+                                        <i class="far fa-clock"></i>
+                                    </span>
+                                    <span>25 Fabruary 21</span>
+                                </div>
+                                <div class="comment">
+                                    <span class="icon-bg">
+                                        <i class="fas fa-comment-dots"></i>
+                                    </span>
+                                    <span>Comments 69</span>
+                                </div>
+                                <div class="time">
+                                    <span class="icon-bg">
+                                        <i class="fas fa-book-reader"></i>
+                                    </span>
+                                    <span>5 Mins Read</span>
+                                </div>
+                            </div>
+                            <div class="share-blog-post d-flex mt-30">
+                                <div class="share-left d-flex align-c ">
+                                    <h3>Share Post</h3>
+                                    <span class="d-flex">
+                                        <a
+                                            href="#"><i
+                                                class="fab fa-facebook icon-bg"></i></a>
+
+                                        <a
+                                            href="#"><i
+                                                class="fab fa-pinterest icon-bg"></i></a>
+                                        <a
+                                            href="#"><i
+                                                class="fab fa-linkedin icon-bg"></i></a>
+
+
+                                        <a
+                                            href="#"><i
+                                                class="fas fa-share icon-bg"></i></a>
+                                    </span>
+
+                                </div>
+                                <div class="share-right d-flex warning-bg">
+                                    <span><i class="far fa-eye"></i> Views 1.5k </span>
+                                    <span><i class="far fa-heart"></i>965</span>
+                                </div>
+                            </div>
+                            <p class="post-excerpt mt-55 ">
+                                Suada cum per tristique vitae dicta ullamco scelerisque itaque nostrum rem quas dis
+                                montes
+                                mattis, nasceturo Nihil
+                                corrupti sit rem? Porro blandit provident dolorem! Sollicitudin? Egestas? Necessitatibus
+                                sed
+                                ullamco ultricies tellus
+                                dapibus mollitia totam id impedit cras sed a Dolore pretium, platea accumsan aspernatur
+                                mollis qui urna
+                                volutpat voluptatibus? Nonummy tempus ornare sagittis, sequi alias, eos pharetra,
+                                <span>dignissimos?</span>maxime aliquid excepteur augue, non
+                                turpis? Recusandae? Scelerisque! Tempore tempor, taciti ratione morbi maiores quasi
+                                fames,
+                                porro nihil montes tempore
+                                numquam ullamco sequi amet aut laborum, laboris assumenda eiusmod hymenaeos orci per
+                                quos
+                                vestibulum pede unde impedit
+                                nonummy.
+                            </p>
+
+                            <div class="post-heading mt-30 mb-25">
+                                <h3>What about the design? Curabitur diamlorem quis elit Facilis isse</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum suscipit eius est odit
+                                repellendus voluptatem laborum obcaecati illum sit dolores.</p> <br>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem quia pariatur suscipit
+                                nam accusamus nostrum, reiciendis modi sapiente repellendus error?</p>
+
+                            <div class="blog-dual-img d-flex mt-25 mb-15">
+                                <div class="blog-img-1">
+                                    <img src="assets/images/blog/blog-img-1.png" alt="blog image">
+                                    <p>life style</p>
+                                </div>
+                                <div class="blog-img-2">
+                                    <img src="assets/images/blog/blog-img-2.png" alt="blog image">
+                                    <p>Healthy Food</p>
+                                </div>
+
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, deleniti sequi
+                                asperiores qui quas debitis animi et ut placeat atque veritatis assumenda veniam
+                                reiciendis
+                                iure expedita corporis doloremque quod vel. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Corrupti distinctio nulla in dicta doloribus aspernatur temporibus id
+                                consequatur quasi provident?</p>
+
+                            <div class="our-secvice-offer">
+                                <div class="heading mb-25">
+                                    <h3>Why best our services</h3>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Suada cum per tristique vitae dicta ullamco
+                                        scelerisque
+                                        itaque nostrum rem</li>
+                                    <li><i class="fas fa-check"></i> Suada cum per tristique vitae dicta ullamco
+                                        scelerisque
+                                        itaque nostrum rem</li>
+                                    <li><i class="fas fa-check"></i> Suada cum per tristique vitae dicta ullamco
+                                        scelerisque
+                                        itaque nostrum rem</li>
+                                    <li><i class="fas fa-check"></i> Suada cum per tristique vitae dicta ullamco
+                                        scelerisque
+                                        itaque nostrum rem</li>
+
+                                </ul>
+                            </div>
+                            <p>Suada cum per tristique vitae dicta ullamco scelerisque itaque nostrum rem quas dis
+                                montes
+                                mattis, nasceturo Nihil
+                                corrupti sit rem? Porro blandit provident dolorem! Sollicitudin gestas? Necessitatibus
+                                sed
+                                ullamco ultricies tellus
+                                dapibus mollitia totam id impedit cras sed a dignissimos? Dolore pretium, platea
+                                accumsan
+                                aspernatur mollis qui urna
+                                volutpat voluptatibus? Nonummy tempus ornare sagittis, sequi alias, eos pharetra.</p>
+
+                            <div class="blog-quote mt-35 warning-bg">
+                                <div class="blog-qoute-content d-flex pr-45 pl-45 pt-20 pb-20">
+                                    <i class="fas fa-quote-right"></i>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit libero veritatis
+                                        rem
+                                        possimus perspiciatis perferendis quisquam voluptates dolorem eos culpa?</p>
+
+                                    <p>Braker Alexo - <span>Team Manager</span> </p>
+
+                                </div>
+
+                            </div>
+                            <div class="post-heading mt-30 mb-25">
+                                <h3>What about the design? Curabitur diamlorem quis elit Facilis isse</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum suscipit eius est odit
+                                repellendus voluptatem laborum obcaecati illum sit dolores.</p> <br>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem quia pariatur suscipit
+                                nam accusamus nostrum, reiciendis modi sapiente repellendus error?</p>
+                            <div class="blog-single-img mt-25">
+                                <img src="assets/images/blog/blog-img-xl.png" alt="Blog image">
+                            </div>
+
+                            <!-- blog-tab-section start  -->
+                            <div class="blog-tab-section mt-45">
+                                <div class="tab-section-left">
+                                    <div class="post-heading mt-20 mb-25">
+                                        <h3>What about the design? Curabitur diamlorem quis elit Facilis isse</h3>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum suscipit eius est
+                                        odit
+                                        repellendus voluptatem laborum obcaecati illum sit dolores. Lorem, ipsum dolor
+                                        sit amet
+                                        consectetur adipisicing elit. Doloribus consequuntur, optio facilis laboriosam
+                                        quaerat
+                                        magnam corporis. Facilis dignissimos veritatis tempora quaerat officiis
+                                        obcaecati ipsa
+                                        quasi. Distinctio, alias excepturi iure aperiam maxime at. Vitae ut aut, vel
+                                        itaque corrupti
+                                        quod reiciendis.</p>
+                                </div>
+                                <div class="tab-section-right">
+                                    <div class="tab">
+                                        <button class="tablinks" onclick="tabSection(event, 'lifeStyle')"
+                                            id="defaultOpen">life Style</button>
+                                        <button class="tablinks"
+                                            onclick="tabSection(event, 'designing')">Designing</button>
+                                        <button class="tablinks"
+                                            onclick="tabSection(event, 'astrology')">Aslrology</button>
+                                    </div>
+
+                                    <div id="lifeStyle" class="tabcontent">
+                                        <p>Suada cum per tristique vitae dicta ullamco scelerisque itaque nostrum rem
+                                            nt,
+                                            lectus alias commodo similique porro
+                                            alias eget dapibus maiores, mollitia eaque quia ridiculus deserunt dicta
+                                            ante
+                                            adipiscing explicabo impedit natoque
+                                            nobis, laudantium arcu volutpat nobis venenatis ullam natoque atque eligendi
+                                            at
+                                            impedit cursus, praesent sit odio
+                                            blandit quisque natus rutrum lorem urna cum bibendum cillum.</p>
+                                    </div>
+
+                                    <div id="designing" class="tabcontent">
+                                        <p>Suada cum per tristique vitae dicta ullamco scelerisque itaque nostrum rem
+                                            nt,
+                                            lectus alias commodo similique porro
+                                            alias eget dapibus maiores, mollitia eaque quia ridiculus deserunt dicta
+                                            ante
+                                            adipiscing explicabo impedit natoque
+                                            nobis, laudantium arcu volutpat nobis venenatis ullam natoque </p>
+                                    </div>
+
+                                    <div id="astrology" class="tabcontent">
+                                        <p>Suada cum per tristique vitae dicta ullamco scelerisque itaque nostrum rem
+                                            nt,
+                                            lectus alias commodo similique porro
+                                            alias eget dapibus maiores, mous rutrum lorem urna cum bibendum cillum.
+                                            Lorem ipsum
+                                            dolor sit amet, consectetur adipisicing elit. Amet temporibus minus
+                                            consequatur harum
+                                            non ratione aliquid optio, delectus sit soluta. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- blog-tab-section end  -->
+
+                            <div class="our-secvice-offer2 mt-25">
+                                <div class="heading mb-25">
+                                    <h3>Why best our services</h3>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-circle"></i> Tant mollit oluptatum quos blanditiis hendrerit
+                                        officia
+                                        senectus torquent penatibus dolorum justo nunc luctus massa!
+                                        Penatibus molesti</li>
+                                    <li><i class="fas fa-circle"></i> Suada cum per tristique vitae dicta ullamco
+                                        scelerisque
+                                        itaque nostrum rem tant mollit oluptatum. pa! Sed sociosqu
+                                        natus, illum, habitasse provident. Enim primis quisque.</li>
+                                    <li><i class="fas fa-circle"></i> Suada cum per tristique vitae dicta ullamco
+                                        scelerisque
+                                        itaque nostrum rem
+                                        itaque nostrum rem</li>
+
+                                </ul>
+                            </div>
+
+                            <div class="mt-30">
+                                <div class="heading mb-25">
+                                    <h3>Tum officia orci donec error incidunt habie delectus platea </h3>
+                                </div>
+                                <ul>
+                                    <li> Tant mollit oluptatum quos blanditiis hendrerit
+                                        officia
+                                        senectus torquent penatibus dolorum justo nunc luctus massa!oluptatum. pa! Sed
+                                        sociosqu
+                                        natus, illum, habitasse provident. Enim primis quisque Lor
+                                        Penatibus molesti</li>
+                                    <li class="mt-20"> Suada cum per tristique vitae dicta ullamco
+                                        scelerisque
+                                        itaque nostrum rem tant mollit oluptatum. pa! Sed sociosqu
+                                        natus, illum, habitasse provident. Enim primis quisque Lorem, ipsum dolor sit
+                                        amet
+                                        consectetur adipisicing elit. Quo, harum? .</li>
+
+
+                                </ul>
+                            </div>
+                            <div class="share-blog-post social-share d-flex mt-30">
+
+                                <div class="tags">
+                                    <h3>Tags</h3>
+                                    <ul class="mt-30">
+                                        <li class="primary-btn">
+                                            Technology
+                                        </li>
+                                        <li class="primary-btn">
+                                            Tour
+                                        </li>
+                                        <li class="primary-btn">
+                                            Business
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="share-left d-flex align-c ">
+                                    <h3 class="mb-30">Share Share</h3>
+                                    <span class="d-flex">
+                                        <a href="https://www.facebook.com/"><i class="fab fa-facebook icon-bg"></i></a>
+                                        <a href="https://www.youtube.com/"><i class="fab fa-youtube icon-bg"></i></a>
+                                        <a href="https://www.instagram.com/"><i
+                                                class="fab fa-instagram icon-bg"></i></a>
+                                        <a href="https://www.twitter.com/"><i class="fab fa-twitter icon-bg"></i></a>
+                                        <a href="https://www.youtube.com/"><i class="fas fa-share icon-bg"></i></a>
+                                    </span>
+
+                                </div>
+                            </div>
+
+                            <hr class="mt-30">
+
+                            <div class="blogger-profile mt-60">
+                                <div class="blogger-details">
+                                    <img src="assets/images/posts/profile/profile.png" alt="blogger Image">
+
+                                    <div class="blogger-info">
+                                        <p class="mb-15">Stephen Smith</p>
+                                        <p>I'm a blogger earum pretium semper inventore cumque quod augue quam. Atque
+                                            voluptate commodi quos veniam sollicitudin,
+                                            eos incididunt repellat scelerisque nemo commode.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Related Post starts -->
+
+                            <div class="gallery-post mt-40">
+                                <div class="gallery-container">
+
+                                    <div class="gallery-header ">
+                                        <h3 class="post-heading mb-30"> <span>Releted Post</span> </h3>
+                                    </div>
+
+                                    <div id="lifeStyle">
+
+
+                                        <div class="gallery-cards ">
+                                            <div class="gallery-card ">
+
+                                                <div class="card-container">
+                                                    <div class="gallery-card-img">
+                                                        <img src="assets/images/posts/gallery/post-1.png"
+                                                            alt="Gallery Image" />
+                                                    </div>
+                                                    <div class="gallery-content">
+                                                        <button class="primary-btn">Success</button>
+                                                        <p>
+                                                            Prepare yourself and take a tour and the world will be...
+                                                            P1
+                                                        </p>
+
+                                                        <a href="#" class="comment-btn pl-20 pr-20 mt-25">
+                                                            <i class="fas fa-comment-dots danger-text"></i>
+                                                            <span>Read More</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gallery-card  ">
+                                                <div class="card-containr ">
+
+                                                    <div class="gallery-card-img">
+                                                        <img src="assets/images/posts/gallery/post-2.png"
+                                                            alt="Gallery Image" />
+                                                    </div>
+                                                    <div class="gallery-content">
+                                                        <button class="primary-btn">Success</button>
+                                                        <p>
+                                                            Don't waste time, show me the way of life and let me...P2
+                                                        </p>
+
+                                                        <a href="#" class="comment-btn pl-20 pr-20 mt-25">
+                                                            <i class="fas fa-comment-dots danger-text"></i>
+                                                            <span>Read More</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gallery-card ">
+                                                <div class="card-container">
+                                                    <div class="gallery-card-img">
+                                                        <img src="assets/images/posts/gallery/post-3.png"
+                                                            alt="Gallery Image" />
+                                                    </div>
+                                                    <div class="gallery-content">
+                                                        <button class="primary-btn">Success</button>
+                                                        <p>Success stories overcoming loneliness and...P3</p>
+                                                        <a href="#" class="comment-btn pl-20 pr-20 mt-25">
+                                                            <i class="fas fa-comment-dots danger-text"></i>
+                                                            <span>Read More</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- releted Post end -->
+                            <div class="blog-comment mt-60">
+                                <div class="heading mb-30">
+                                    <h3>Comments 16</h3>
+                                </div>
+
+                                <div class="authors">
+                                    <div class="comment-author">
+                                        <div class="author-img">
+                                            <img src="assets/images/users/comment-1.png" alt="Users Image">
+                                        </div>
+                                        <div class="comment-body">
+                                            <div class="author-name">
+                                                <p>Mario Masker</p>
+                                                <div class="time">
+                                                    <i class="fas fa-clock"></i> 3 days ago
+                                                </div>
+                                            </div>
+                                            <div class="author-comment mt-15 mb-30">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae
+                                                iusto
+                                                assumenda omnis, eius dignissimos in. Aliquam iure amet dolore.
+                                            </div>
+                                            <div class="reply">
+                                                <i class="fas fa-reply "></i> Reply
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="authors  pl-80">
+                                        <div class="comment-author">
+                                            <div class="author-img">
+                                                <img src="assets/images/users/comment-1.png" alt="Users Image">
+                                            </div>
+                                            <div class="comment-body">
+                                                <div class="author-name">
+                                                    <p>Mario Masker</p>
+                                                    <div class="time">
+                                                        <i class="fas fa-clock"></i> 3 days ago
+                                                    </div>
+                                                </div>
+                                                <div class="author-comment mt-15 mb-30">
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                                                    vitae
+                                                    iusto
+                                                    assumenda omnis, eius dignissimos in. Aliquam iure amet dolore.
+                                                </div>
+                                                <div class="reply">
+                                                    <i class="fas fa-reply "></i> Reply
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="authors">
+                                        <div class="comment-author">
+                                            <div class="author-img">
+                                                <img src="assets/images/users/comment-1.png" alt="Users Image">
+                                            </div>
+                                            <div class="comment-body">
+                                                <div class="author-name">
+                                                    <p>Mario Masker</p>
+                                                    <div class="time">
+                                                        <i class="fas fa-clock"></i> 3 days ago
+                                                    </div>
+                                                </div>
+                                                <div class="author-comment mt-15 mb-30">
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                                                    vitae
+                                                    iusto
+                                                    assumenda omnis, eius dignissimos in. Aliquam iure amet dolore.
+                                                </div>
+                                                <div class="reply">
+                                                    <i class="fas fa-reply "></i> Reply
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="add-comment mt-60">
+                                <div class="heading mb-30">
+                                    <h3>Add your comment</h3>
+                                </div>
+                                <div class="comment-form">
+                                    <form action="#">
+                                        <div class="row">
+                                            <div>
+                                                <textarea class="form-control" placeholder="Comment"></textarea>
+                                            </div>
+                                            <div class="comment-grid mt-30">
+                                                <div>
+                                                    <input type="text" placeholder="Name">
+                                                </div>
+                                                <div>
+                                                    <input type="email" placeholder="Email">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="mt-30">
+                                                <button class="comment-btn light-bg">Add Comment</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <!-- large-card post end  -->
+
+                <!-- side bar start  -->
+                <div class="side-bar">
+                    <!-- profile-start  -->
+                    <div class="card profile-card text-center">
+                        <div class="card-inner">
+
+                            <div class="profile-img mb-25">
+                                <img src="assets/images/posts/profile/profile.png" class="card-img-top"
+                                    alt="Profile Picture" />
+                            </div>
+                            <div class="profile-card-body">
+                                <h4 class="profile-title">Ethan Brave</h4>
+                                <p class="profile-about mt-15 mb-20">
+                                    I'm a Personal Blogger from California, USA. I try to think
+                                    differently from everyone. Creating something new. I think...
+                                    My main purpose is to give some gifts to the world. That's why
+                                    I write blogpost accounts.
+                                </p>
+                                <div class="social-icons mb-25">
+                                    <a href="#" class="icon-bg"><i class="fab fa-youtube icon"></i></a>
+                                    <a href="#" class="icon-bg"><i class="fab fa-facebook icon"></i></a>
+                                    <a href="#" class="icon-bg"><i class="fab fa-instagram icon"></i></a>
+                                    <a href="#" class="icon-bg"><i class="fab fa-twitter icon"></i></a>
+                                </div>
+                                <a class="comment-btn pl-20 pr-20"><i class="fas fa-address-card danger-text"></i>
+                                    <span class="pl-10">View Profile</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- profile-end  -->
+                    <!-- recent posts start -->
+                    <div class="recent-post card rp-1">
+                        <div class="card-inner">
+                            <div class="post-heading">
+                                <h3> <span>Recent Post</span> </h3>
+                            </div>
+                            <div class="post-row">
+                                <div class="post-column">
+                                    <button class="primary-btn">Technology</button>
+                                    <h4 class="post-title">
+                                        It's easy to think that technology
+                                        has made life easier
+                                    </h4>
+                                </div>
+                                <div class="post-column">
+                                    <button class="primary-btn">Nature</button>
+                                    <h4 class="post-title">
+                                        Nature keeps us alive, it is our
+                                        duty to protect her
+                                    </h4>
+                                </div>
+                                <div class="post-column">
+                                    <button class="primary-btn">Tech</button>
+                                    <h4 class="post-title">
+                                        Both technology and nature
+                                        guide our future and pave way
+                                    </h4>
+                                </div>
+                            </div>
+
+
+                            <a class="comment-btn pl-20 pr-20 " href="#"> <i class="fas fa-comment-dots danger-text">
+                                </i><span>Go to Profile </span></a>
+
+                        </div>
+                    </div>
+                    <!-- recent posts end -->
+                    <!-- social profile section start -->
+                    <div class="card social-profile s-p">
+                        <div class="card-inner">
+                            <div class="post-heading">
+                                <h3> <span>Social Profile</span> </h3>
+                            </div>
+                            <div class="social-profile-cards">
+                                <div class="social-icons">
+                                    <a class="icons" href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <span>Facebook</span>
+                                </div>
+
+                                <div class="social-icons">
+                                    <a class="icons" href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <span>Instagram</span>
+                                </div>
+                                <div class="social-icons">
+                                    <a class="icons" href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <span>Twitter</span>
+                                </div>
+                                <div class="social-icons">
+                                    <a class="icons" href="#">
+                                        <i class="fab fa-pinterest"></i>
+                                    </a>
+                                    <span>Pinterest</span>
+                                </div>
+                                <div class="social-icons">
+                                    <a class="icons" href="#">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <span>Youtube</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- social profile section end -->
+                    </div>
+
+                    <!-- ads banner start -->
+                    <div class="card ads ">
+                        <div class="ads-banner-content">
+                            <p>50% Off</p>
+                            <p>Ads Banner</p>
+                            <a class="primary-btn" href="#">
+                                <i class="fas fa-cart-plus"></i> Buy Now</a>
+                        </div>
+                    </div>
+                    <!-- ads banner end -->
+                    <!-- instagram post section start -->
+                    <div class=" card instagram-post ">
+                        <div class="card-inner">
+                            <div class="post-heading">
+                                <h4> <span>Instagram Post</span></h4>
+                            </div>
+
+                            <div class="popup-gallery">
+                                <a href="assets/images/posts/standard/post-10.png" title="The Cleaner"
+                                    class="hoverZoomLink  "><img class="image-area"
+                                        src="assets/images/posts/standard/post-10.png"></a>
+                                <a href="assets/images/posts/standard/post-11.png" title="The Cleaner"
+                                    class="hoverZoomLink  "><img class="image-area"
+                                        src="assets/images/posts/standard/post-11.png"></a>
+                                <a href="assets/images/posts/standard/post-16.png" title="The Cleaner"
+                                    class="hoverZoomLink  "><img class="image-area"
+                                        src="assets/images/posts/standard/post-16.png"></a>
+                                <a href="assets/images/posts/standard/post-21.png" title="The Cleaner"
+                                    class="hoverZoomLink  "><img class="image-area"
+                                        src="assets/images/posts/standard/post-21.png"></a>
+                                <a href="assets/images/posts/standard/post-22.png" title="The Cleaner"
+                                    class="hoverZoomLink  "><img class="image-area"
+                                        src="assets/images/posts/standard/post-22.png"></a>
+                                <a href="assets/images/posts/standard/post-23.png" title="The Cleaner"
+                                    class="hoverZoomLink  "><img class="image-area"
+                                        src="assets/images/posts/standard/post-23.png"></a>
+
+                            </div>
+
+                            <a class="button comment-btn pl-20 pr-20 mt-30 " href="#"> <i
+                                    class="fas fa-comment-dots danger-text">
+                                </i><span>View More </span></a>
+                        </div>
+                    </div>
+                    <!-- instagram post section end -->
+                    <!-- top catagory start  -->
+                    <div class="top-categories card ">
+                        <div class="card-inner">
+                            <div class="post-heading">
+                                <h3> <span>Top Categories</span> </h3>
+                            </div>
+                            <div class="single-category-items">
+                                <ul class="pl-45">
+                                    <li>Carton Game<span>30</span></li>
+                                    <li>Youtube Video<span>635</span></li>
+                                    <li>Graphics Design<span>98</span></li>
+                                    <li>Web Design -Dev<span>64</span></li>
+                                    <li>WordPress<span>99</span></li>
+                                    <li>Open Fashion<span>43</span></li>
+                                    <li>Good Food<span>45</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- top catagory end  -->
+
+                    <!-- tags start  -->
+                    <div class="tags card ">
+                        <div class="card-inner">
+                            <div class="post-heading">
+                                <h3> <span>Tags</span> </h3>
+                            </div>
+                            <div class="tags-btn">
+                                <a class="primary-btn" href="#">Carton Game</a>
+                                <a class="primary-btn" href="#">Carton Game</a>
+                                <a class="primary-btn" href="#">Carton Game</a>
+                                <a class="primary-btn" href="#">WordPress</a>
+                                <a class="primary-btn" href="#">Carton Game</a>
+                                <a class="primary-btn" href="#">Carton Game</a>
+                                <a class="primary-btn" href="#">Carton Game</a>
+                                <a class="primary-btn" href="#">Tom & Jerry</a>
+                                <a class="primary-btn" href="#">Carton Game</a>
+                                <a class="primary-btn" href="#">Carton</a>
+                                <a class="primary-btn" href="#">Carton Game</a>
+                                <a class="primary-btn" href="#">Art Design</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tags end  -->
+                    <!-- side bar end  -->
+                </div>
+            </div>
+        </div>
+        <!-- home footer start -->
+        <footer class=" home-footer light-bg pt-70">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-content">
+                        <div class="content-box1">
+                            <div class=" post-heading content-heading">
+                                <span>Hand Picked Product</span>
+                            </div>
+                            <div class="content-products">
+                                <div class="content-product">
+                                    <div class="content-img">
+                                        <img src="assets/images/footer/footer-1.png" alt="Product Image">
+                                    </div>
+                                    <div class="content-info">
+                                        <p>Fashion show for men duty</p>
+                                        <p><span>$30.00</span></p>
+                                        <div class="info-icon">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i> <i
+                                                class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-product">
+                                    <div class="content-img">
+                                        <img src="assets/images/footer/footer-2.png" alt="Product Image">
+                                    </div>
+                                    <div class="content-info">
+                                        <p>Fashion show for men duty</p>
+                                        <p><span>$30.00</span></p>
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i> <i
+                                            class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box2">
+                            <div class=" post-heading content-heading ">
+                                <span>Account</span>
+
+                            </div>
+
+                            <div class="content-list">
+                                <ul>
+                                    <li><a href="#">Cart</a> </li>
+                                    <li><a href="#">Check out</a> </li>
+                                    <li><a href="#">All Products</a></li>
+                                    <li><a href="#">Shop Page</a> </li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Profile</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="content-box3">
+                            <div class="content-heading post-heading">
+                                <span>Quick Access</span>
+                            </div>
+
+                            <div class="content-list">
+                                <ul>
+                                    <li><a href="#">Cart</a> </li>
+                                    <li><a href="#">Check out</a> </li>
+                                    <li><a href="#">All Products</a></li>
+                                    <li><a href="#">Shop Page</a> </li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Profile</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="content-box4">
+                            <div class="content-heading post-heading">
+                                <span>Blog Layout</span>
+                            </div>
+                            <div class="content-list">
+                                <ul>
+                                    <li><a href="#">Cart</a> </li>
+                                    <li><a href="#">Check out</a> </li>
+                                    <li><a href="#">All Products</a></li>
+                                    <li><a href="#">Shop Page</a> </li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Profile</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="content-box5 footer-gallery">
+
+                            <div class="content-heading post-heading">
+                                <span>Gallery</span>
+                            </div>
+
+                            <div class="popup-gallery">
+                                <a href="assets/images/posts/standard/post-10.png" title="The Cleaner"
+                                    class="hoverZoomLink  "><img class="image-area"
+                                        src="assets/images/posts/standard/post-10.png"></a>
+                                <a href="assets/images/posts/standard/post-11.png" title="The Cleaner"
+                                    class="hoverZoomLink  "><img class="image-area"
+                                        src="assets/images/posts/standard/post-11.png"></a>
+                                <a href="assets/images/posts/standard/post-16.png" title="The Cleaner"
+                                    class="hoverZoomLink  "><img class="image-area"
+                                        src="assets/images/posts/standard/post-16.png"></a>
+                                <a href="assets/images/posts/standard/post-21.png" title="The Cleaner"
+                                    class="hoverZoomLink  "><img class="image-area"
+                                        src="assets/images/posts/standard/post-21.png"></a>
+                                <a href="assets/images/posts/standard/post-22.png" title="The Cleaner"
+                                    class="hoverZoomLink  "><img class="image-area"
+                                        src="assets/images/posts/standard/post-22.png"></a>
+                                <a href="assets/images/posts/standard/post-23.png" title="The Cleaner"
+                                    class="hoverZoomLink  "><img class="image-area"
+                                        src="assets/images/posts/standard/post-23.png"></a>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>@Copyright All right reserved & designed by <span>Debuggres Studio</span> </p>
+                </div>
+
+            </div>
+        </footer>
+        <!-- home footer end -->
+    </div>
+    <!-- ===============================================================
+    								Homepage-blog end 
+    	=============================================================== -->
+
+
+
+    <!-- Optonal Javascript -->
+    <!-- Jquery-->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <!-- owl casousel -->
+    <script src="assets/plugins/owl/js/owl.carousel.min.js"></script>
+    <!-- magnefic-popup  -->
+    <script src="assets/plugins/magnefic-popup/jquery.magnific-popup.min.js"></script>
+    <!-- custom js  -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
