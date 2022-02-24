@@ -25,7 +25,10 @@ const BlogsiteSchema = new mongoose.Schema({
     type: Boolean,
     default: false
   },
-  logo_picture: {
+  site_logo: {
+    type: String
+  },
+  site_icon: {
     type: String
   },
   current_plan: {
@@ -56,13 +59,11 @@ const BlogsiteSchema = new mongoose.Schema({
   linkedin: {
     type: String
   },
-  headers: [
+  categories: [
     {
-      header: {
-        type: String
-      },
-      subheader: {
-        type: String
+      categId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'categories'
       }
     }
   ],
